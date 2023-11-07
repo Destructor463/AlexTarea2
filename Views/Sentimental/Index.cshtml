@@ -1,0 +1,16 @@
+
+@{
+    ViewData["Title"] = "Comentarios";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Comentario" method="post">
+    <div class="form-group">
+        <label for="comentario">Comentario:</label>
+        <textarea class="form-control" id="comentario" name="comentario" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Comentario</button>
+</form>
+
+<div id="resultado" style="display:none;"></div>
